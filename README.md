@@ -6,6 +6,8 @@
 
 ## Azure App Service
 
+* Install NPM packages after Zip deploy
+  * App Setting -> SCM_DO_BUILD_DURING_DEPLOYMENT -> true
 * Configure logging to container logs
   * Monitoring -> Logs -> Enable
 * Configure application insights
