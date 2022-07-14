@@ -30,6 +30,10 @@
       },
       ```
 
+## Debug SAS tokens
+
+* Create SAS token in portal then compare to SAS token created with generateBlobSASQueryParameters
+
 ## Learn sandbox
 
 If learn sandbox doesn't let you in, recreate a new one which resets. 
