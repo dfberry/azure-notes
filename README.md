@@ -6,6 +6,10 @@
 
 ## Azure App Service
 
+* Easy auth settings
+  * WEBSITE_AUTH_CLIENT - don't create - is created and hidden when you configure easy auth
+  * MICROSOFT_PROVIDER_AUTHENTICATION_SECRET - set this to the app registration secret
+  * WEBSITE_AUTH_TENANT_ID - this is either your tenant or "COMMON", might be another name depending on how the config is programmed in JS
 * Port
   * 8080 is default
   * change via App Setting ->  WEBSITES_PORT
