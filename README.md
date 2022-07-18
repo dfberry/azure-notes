@@ -6,6 +6,9 @@
 
 ## Azure App Service
 
+* Port
+ * 8080 is default
+ * change via App Setting ->  WEBSITES_PORT
 * Install NPM packages after Zip deploy
   * App Setting -> SCM_DO_BUILD_DURING_DEPLOYMENT -> true
 * Configure logging to container logs
