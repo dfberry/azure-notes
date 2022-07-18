@@ -41,6 +41,24 @@
 
 * Create SAS token in portal then compare to SAS token created with generateBlobSASQueryParameters
 
+## GitHub
+
+### Actions
+
+#### Ignore node_modules in artifact
+
+```yaml
+- name: Upload artifact for deployment job
+  uses: actions/upload-artifact@v2
+  with:
+    name: ${{ secrets.DEPLOY_APP_NAME }}
+    path: |
+         .
+         !./node_modules
+```
+
+* Found in [basic-express-typescript](https://github.com/dfberry/basic-express-typescript/blob/main/.github/workflows/deploy-to-stage.yml)
+
 ## Learn sandbox
 
 If learn sandbox doesn't let you in, recreate a new one which resets. 
