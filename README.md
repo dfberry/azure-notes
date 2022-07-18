@@ -58,7 +58,9 @@
 ```
 
 * Found in [basic-express-typescript](https://github.com/dfberry/basic-express-typescript/blob/main/.github/workflows/deploy-to-stage.yml)
-
+* Combine with App Service deployment
+    * Install NPM packages after Zip deploy
+    * App Setting -> SCM_DO_BUILD_DURING_DEPLOYMENT -> true 
 ## Learn sandbox
 
 If learn sandbox doesn't let you in, recreate a new one which resets. 
