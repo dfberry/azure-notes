@@ -36,6 +36,10 @@
         }
       },
       ```
+* View logs
+    * container startup logs: /Logs/*_docker.log
+    * runtime logs (console.log: /Logs/*_default_docker.log
+    * easyauth: /Logs/*_easyauth_docker.log
 
 ## Debug SAS tokens
 
