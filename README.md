@@ -8,6 +8,9 @@
    * In resource explorer, location for easy auth is `/providers/Microsoft.Web/sites/APP-SERVICE-NAME/config/authsettingsV2/list?api-version=2020-12-01`
    * Login: https://APP-SERVICE-NAME.azurewebsites.net/.auth/login/aad
    * Logout: https://APP-SERVICE-NAME.azurewebsites.net/.auth/logout
+   * loginParameters for easy auth single app only: ["response_type=code id_token","scope=openid offline_access profile"]
+   * loginParameters for easy auth single app only + Graph: ["response_type=code id_token","scope=openid offline_access profile https://graph.microsoft.com/User.Read"]
+   * loginParameters for easy auth single app only + Graph + 2nd app's API: ["response_type=code id_token","scope=openid offline_access profile https://graph.microsoft.com/User.Read api://SECOND-APP-CLIENT-ID/user_impersonation"]
 
   ```
   "identityProviders": {
@@ -34,6 +37,7 @@
           }
         }}        
         ```
+        
 
 ## Active Directory
 
