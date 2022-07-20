@@ -31,6 +31,12 @@
               }}        
         ```
 
+## Active Directory
+
+### App registrations
+
+* Error:  "The directory object quota limit for the Principal has been exceeded. Please ask your administrator to increase the quota limit or delete objects to reduce the used quota." - [StackOverflow showing PowerShell command to fix](https://stackoverflow.com/questions/58935129/cant-create-new-service-principals-in-azure-despite-being-under-quota)
+
 ## Azure App Service
 
 * Easy auth settings
