@@ -3,32 +3,36 @@
 ## Azure
 
 * [Azure resource explorer](https://resources.azure.com/)
-    * Easy auth:  /providers/Microsoft.Web/sites/APP-SERVICE-NAME/config/authsettingsV2/list?api-version=2020-12-01
+ 
+* Easy auth:  
+   * In resource explorer, location for easy auth is `/providers/Microsoft.Web/sites/APP-SERVICE-NAME/config/authsettingsV2/list?api-version=2020-12-01`
+   * Login: https://APP-SERVICE-NAME.azurewebsites.net/.auth/login/aad
+   * Logout: https://APP-SERVICE-NAME.azurewebsites.net/.auth/logout
 
-        ```
-        "identityProviders": {
-              "azureActiveDirectory": {
-                "enabled": true,
-                "registration": {
-                  "openIdIssuer": "https://sts.windows.net/51397421-87d6-42c1-8bab-98305329d75c/v2.0",
-                  "clientId": "4480f5c3-01a7-426a-b602-dba4e7b3f776",
-                  "clientSecretSettingName": "MICROSOFT_PROVIDER_AUTHENTICATION_SECRET"
-                },
-                "login": {
-                  "loginParameters": [
-                    "response_type=code id_token",
-                    "scope=openid offline_access profile https://graph.microsoft.com/User.Read"
-                  ],
-                  "disableWWWAuthenticate": false
-                },
-                "validation": {
-                  "jwtClaimChecks": {},
-                  "allowedAudiences": [],
-                  "defaultAuthorizationPolicy": {
-                    "allowedPrincipals": {}
-                  }
-                }
-              }}        
+  ```
+  "identityProviders": {
+        "azureActiveDirectory": {
+          "enabled": true,
+          "registration": {
+            "openIdIssuer": "https://sts.windows.net/51397421-87d6-42c1-8bab-98305329d75c/v2.0",
+            "clientId": "4480f5c3-01a7-426a-b602-dba4e7b3f776",
+            "clientSecretSettingName": "MICROSOFT_PROVIDER_AUTHENTICATION_SECRET"
+          },
+          "login": {
+            "loginParameters": [
+              "response_type=code id_token",
+              "scope=openid offline_access profile https://graph.microsoft.com/User.Read"
+            ],
+            "disableWWWAuthenticate": false
+          },
+          "validation": {
+            "jwtClaimChecks": {},
+            "allowedAudiences": [],
+            "defaultAuthorizationPolicy": {
+              "allowedPrincipals": {}
+            }
+          }
+        }}        
         ```
 
 ## Active Directory
