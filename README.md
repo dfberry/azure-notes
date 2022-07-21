@@ -58,6 +58,7 @@
   * App Setting -> SCM_DO_BUILD_DURING_DEPLOYMENT -> true
 * Configure logging to container logs
   * Monitoring -> Logs -> Enable
+  * Download lixux logs: https://YOUR-RESOURCE-NAME.scm.azurewebsites.net/api/logs/docker/zip
 * Configure application insights
   * Settings -> Configuration -> Turn on Application Insights   
 * Configure easy auth:
