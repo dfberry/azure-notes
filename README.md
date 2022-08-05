@@ -217,4 +217,4 @@ main(accessToken).then((userData)=>{
 #### Error: Can't find task for func: host start
 
 * Always run functions app in docker container because Functions runtime are directly tied to Node runtime
-* Make sure Azure Functions extensions in installed and _loaded_ in VS Code. The extenion may be in ./vscode/extensions.json, but may not be loaded correctly
+* Make sure Azure Functions extensions in installed and _loaded_ in VS Code in the container. The extenion may be in ./vscode/extensions.json, but may not be loaded correctly
