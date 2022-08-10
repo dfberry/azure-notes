@@ -38,6 +38,15 @@
         }}        
         ```
         
+## Azure CLI
+
+### Current logged-in user
+
+```
+# acquire logged in user context
+export CURRENT_USER=$(az account show --query user.name -o tsv)
+export CURRENT_USER_OBJECTID=$(az ad user show --id $CURRENT_USER --query objectId -o tst)
+```
 
 ## Active Directory
 
