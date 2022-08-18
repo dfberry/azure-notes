@@ -94,6 +94,7 @@ export CURRENT_USER_OBJECTID=$(az ad user show --id $CURRENT_USER --query object
 
 ## Databases
 
+* [AdventureWorks](https://docs.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms)
 * [Convert SQL API JSON to MongoDB API BSON](https://gist.github.com/seesharprun/c36fcc13c1c5766a4ae38439729dbe65) - .NET gist
    * [Cosmisworks data](https://github.com/seesharprun/cosmicworkstool/tree/main/src/node/data) - customers and products 
    * [Customers.json](https://gist.github.com/seesharprun/c36fcc13c1c5766a4ae38439729dbe65#file-customers-json)
