@@ -92,6 +92,17 @@ export CURRENT_USER_OBJECTID=$(az ad user show --id $CURRENT_USER --query object
     * runtime logs (console.log: /Logs/*_default_docker.log
     * easyauth: /Logs/*_easyauth_docker.log
 
+## Databases
+
+* [Convert SQL API JSON to MongoDB API BSON](https://gist.github.com/seesharprun/c36fcc13c1c5766a4ae38439729dbe65) - .NET gist
+   * [Cosmisworks data](https://github.com/seesharprun/cosmicworkstool/tree/main/src/node/data) - customers and products 
+   * [Customers.json](https://gist.github.com/seesharprun/c36fcc13c1c5766a4ae38439729dbe65#file-customers-json)
+   * [Products.json](https://gist.github.com/seesharprun/c36fcc13c1c5766a4ae38439729dbe65#file-products-json)
+
+* [CosmicWorks](https://github.com/azurecosmosdb/cosmicworks) - GitHub repo
+* [cosmos-db-mongodb-api-javascript-samples](https://github.com/Azure-Samples/cosmos-db-mongodb-api-javascript-samples) - GitHub repo
+* [MongoDB aggregations book](https://www.practical-mongodb-aggregations.com/)
+
 ## Debug SAS tokens
 
 * Create SAS token in portal then compare to SAS token created with generateBlobSASQueryParameters
