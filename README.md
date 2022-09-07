@@ -105,9 +105,10 @@ export CURRENT_USER_OBJECTID=$(az ad user show --id $CURRENT_USER --query object
    * [Cosmisworks data](https://github.com/seesharprun/cosmicworkstool/tree/main/src/node/data) - customers and products 
    * [Customers.json](https://gist.github.com/seesharprun/c36fcc13c1c5766a4ae38439729dbe65#file-customers-json)
    * [Products.json](https://gist.github.com/seesharprun/c36fcc13c1c5766a4ae38439729dbe65#file-products-json)
-
+* Azure SDK for Cosmos DB
+   * [Families.json](https://github.com/Azure/azure-sdk-for-js/blob/main/sdk/cosmosdb/cosmos/samples/v3/javascript/Data/Families.json)
 * [CosmicWorks](https://github.com/azurecosmosdb/cosmicworks) - GitHub repo
-* [cosmos-db-mongodb-api-javascript-samples](https://github.com/Azure-Samples/cosmos-db-mongodb-api-javascript-samples) - GitHub repo
+* [cosmos-db-mongodb-api-javascript-samples](https://github.com/Azure-Samples/cosmos-db-mongodb-api-javascript-samples) - GitHub repo 
 * [MongoDB aggregations book](https://www.practical-mongodb-aggregations.com/)
 
 ## Database emulators
