@@ -92,6 +92,12 @@ export CURRENT_USER_OBJECTID=$(az ad user show --id $CURRENT_USER --query object
     * runtime logs (console.log: /Logs/*_default_docker.log
     * easyauth: /Logs/*_easyauth_docker.log
 
+## Azure Cloud shell
+
+[Azure cloud shell](https://ms.portal.azure.com/#cloudshell/) allows you to use Azure CLI without having to install it. 
+
+* Has [jq](https://stedolan.github.io/jq/) (commandline JSON processor) installed
+
 ## Databases
 
 * [AdventureWorks](https://docs.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms)
