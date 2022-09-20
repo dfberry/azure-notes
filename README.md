@@ -268,7 +268,7 @@ In `./.vscode/launch.json` file:
                 "<node_internals>/**"
             ],
             // Use the ${file} variables
-            "program": "${workspaceFolder}\\${file}.js"
+            "program": "${workspaceFolder}\\${file}"
         }
     ]
 }
@@ -292,7 +292,7 @@ In `./.vscode/launch.json` file:
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\${file}.js",
+            "program": "${workspaceFolder}\\${file}",
             // Use this line to indicate an external terminal - such as reading into program from user input
             "console": "externalTerminal"
         }
