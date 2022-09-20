@@ -142,7 +142,7 @@ export CURRENT_USER_OBJECTID=$(az ad user show --id $CURRENT_USER --query object
 ## Learn sandbox
 
 If learn sandbox doesn't let you in, recreate a new one which resets. 
-* Must switch tenant to Sandbox tenant in both portal and VSCode
+* Must switch tenant to Sandbox tenant (604c1504-c6a3-4080-81aa-b33091104187) in both portal and VSCode
 
 ## Microsoft Graph
 
