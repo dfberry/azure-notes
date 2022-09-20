@@ -249,6 +249,57 @@ main(accessToken).then((userData)=>{
 
 ## Visual Studio Code
 
+### Debug with current file
+
+In `./.vscode/launch.json` file:
+
+```
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            // Use the ${file} variables
+            "program": "${workspaceFolder}\\${file}.js"
+        }
+    ]
+}
+```
+
+### Debug with external terminal
+
+In `./.vscode/launch.json` file:
+
+```
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\${file}.js",
+            // Use this line to indicate an external terminal - such as reading into program from user input
+            "console": "externalTerminal"
+        }
+    ]
+}
+```
+
 ### Debugging Azure Functions
 
 #### Error: Can't find task for func: host start
