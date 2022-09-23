@@ -111,6 +111,11 @@ export CURRENT_USER_OBJECTID=$(az ad user show --id $CURRENT_USER --query object
 * [cosmos-db-mongodb-api-javascript-samples](https://github.com/Azure-Samples/cosmos-db-mongodb-api-javascript-samples) - GitHub repo 
 * [MongoDB aggregations book](https://www.practical-mongodb-aggregations.com/)
 
+### Cosmos DB
+
+* Server-side JS - [Azure/azure-cosmosdb-js-server](https://github.com/Azure/azure-cosmosdb-js-server)
+* [Node sp sample](https://github.com/Azure/azure-cosmosdb-node/tree/master/samples/ServerSideScripts)
+
 ## Database emulators
 
 * [Cosmos DB from container for linux](https://docs.microsoft.com/en-us/azure/cosmos-db/linux-emulator?tabs=sql-api%2Cssl-netstd21#run-the-linux-emulator-on-macos)
