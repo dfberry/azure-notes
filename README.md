@@ -1,5 +1,12 @@
 # azure-notes
 
+## Web properties
+
+* [Learn (content)](https://learn.microsoft.com/)
+* [Tech Communities](https://techcommunity.microsoft.com/)
+* [Learn skills for jobs](https://opportunity.linkedin.com/skills-for-in-demand-jobs)
+   * [Career Essentials in Software Development](https://www.linkedin.com/learning/paths/career-essentials-in-software-development)
+
 ## Azure
 
 * [Azure resource explorer](https://resources.azure.com/)
