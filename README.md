@@ -2,6 +2,7 @@
 
 ## Web properties
 
+* [JavaScript at Microsoft](https://developer.microsoft.com/en-us/javascript/)
 * [Learn (content)](https://learn.microsoft.com/)
 * [Tech Communities](https://techcommunity.microsoft.com/)
 * [Learn skills for jobs](https://opportunity.linkedin.com/skills-for-in-demand-jobs)
