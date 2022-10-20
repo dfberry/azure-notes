@@ -118,6 +118,7 @@ export CURRENT_USER_OBJECTID=$(az ad user show --id $CURRENT_USER --query object
 * [CosmicWorks](https://github.com/azurecosmosdb/cosmicworks) - GitHub repo
 * [cosmos-db-mongodb-api-javascript-samples](https://github.com/Azure-Samples/cosmos-db-mongodb-api-javascript-samples) - GitHub repo 
 * [MongoDB aggregations book](https://www.practical-mongodb-aggregations.com/)
+* [Cognitive Search 10K books](https://github.com/Azure-Samples/azure-search-javascript-samples/blob/main/search-website/bulk-insert/good-books-index.json)
 
 ### Cosmos DB
 
