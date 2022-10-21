@@ -263,6 +263,12 @@ main(accessToken).then((userData)=>{
 
 ## Visual Studio Code
 
+### Log issue against an Azure extension
+
+1. Look up extension in [marketplace](https://marketplace.visualstudio.com/items)
+2. On extensions page on marketplace, find source code repo under project details
+3. Open issue on repo
+
 ### Debug with current file
 
 In `./.vscode/launch.json` file:
