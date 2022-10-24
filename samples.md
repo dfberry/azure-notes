@@ -2,6 +2,7 @@
 
 ## Cognitive Search
 
+### Add web search to site
 
 * [.NET](https://github.com/Azure-Samples/azure-search-dotnet-samples)
 * [JS](https://github.com/Azure-Samples/azure-search-javascript-samples)
