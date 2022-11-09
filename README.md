@@ -263,6 +263,10 @@ main(accessToken).then((userData)=>{
 
 ## Visual Studio Code
 
+## Docker containers for dev containers
+
+* [GitHub templates of containers](https://github.com/microsoft/vscode-dev-containers)
+
 ### Log issue against an Azure extension
 
 1. Look up extension in [marketplace](https://marketplace.visualstudio.com/items)
