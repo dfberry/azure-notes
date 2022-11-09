@@ -156,6 +156,27 @@ export CURRENT_USER_OBJECTID=$(az ad user show --id $CURRENT_USER --query object
 }
 ```
 
+### Blob trigger settings in host.json
+
+Notice that blob trigger follows the queue trigger settings.
+
+```
+{
+    "version": "2.0",
+    "extensions": {
+        "queues": {
+            "maxPollingInterval": "00:00:02",
+            "visibilityTimeout" : "00:00:30",
+            "batchSize": 16,
+            "maxDequeueCount": 5,               // retries the function for that blob 5 times by default
+            "newBatchThreshold": 8,
+            "messageEncoding": "base64"
+        }
+    }
+}
+
+```
+
 ## GitHub
 
 ### Actions
