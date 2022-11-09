@@ -133,6 +133,29 @@ export CURRENT_USER_OBJECTID=$(az ad user show --id $CURRENT_USER --query object
 
 * Create SAS token in portal then compare to SAS token created with generateBlobSASQueryParameters
 
+## Functions
+
+### Custom `route` in `function.json`
+
+```json
+{
+    "bindings": [
+    {
+        "type": "httpTrigger",
+        "name": "req",
+        "direction": "in",
+        "methods": [ "get" ],
+        "route": "products/{category:alpha}/{id:int?}"
+    },
+    {
+        "type": "http",
+        "name": "res",
+        "direction": "out"
+    }
+    ]
+}
+```
+
 ## GitHub
 
 ### Actions
