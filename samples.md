@@ -12,6 +12,10 @@
 
 * [Quickstarts - all languages](https://github.com/Azure-Samples/cognitive-services-quickstart-code)
 
+## Data Explorer (Kusto)
+
+* [Sample data - storm events - csv](https://kustosamples.blob.core.windows.net/samplefiles/StormEvents.csv)
+
 ## E2E
 
 * [Cloud Advocacy - Contoso Real Estate](https://github.com/contoso-real-estate/contoso-real-estate)
