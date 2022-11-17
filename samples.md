@@ -1,5 +1,9 @@
 # Samples
 
+## Azure CLI
+
+* [Bash scripts samples repo](https://github.com/Azure-Samples/azure-cli-samples)
+
 ## Cognitive Search
 
 ### Add web search to site
@@ -8,7 +12,7 @@
 * [JS](https://github.com/Azure-Samples/azure-search-javascript-samples)
 * [PY](https://github.com/Azure-Samples/azure-search-python-samples)
 
-### Cognitive Services
+## Cognitive Services
 
 * [Quickstarts - all languages](https://github.com/Azure-Samples/cognitive-services-quickstart-code)
 
