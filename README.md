@@ -177,6 +177,21 @@ Notice that blob trigger follows the queue trigger settings.
 
 ```
 
+### Azure Functions - GitHub action
+
+* [Azure Functions Action](https://github.com/marketplace/actions/azure-functions-action)
+
+```
+- name: 'Run Azure Functions Action'
+  uses: Azure/functions-action@v1
+  id: fa
+  with:
+    app-name: 'AdvocacyGithubTraffic'
+    slot-name: 'Production'
+    package: '${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/output'
+    publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_6F0DB2747FBF4EFFADD6A4472638F303 }}
+```
+
 ## GitHub
 
 ### Actions
