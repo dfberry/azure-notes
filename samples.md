@@ -20,6 +20,12 @@
 
 * [Sample data - storm events - csv](https://kustosamples.blob.core.windows.net/samplefiles/StormEvents.csv)
 
+## GitHub Action
+
+### Azure Function
+
+* [Cloud advocacy .NET](https://github.com/gloveboxes/Advocacy-GitHub-Reporting)
+
 ## E2E
 
 * [Cloud Advocacy - Contoso Real Estate](https://github.com/contoso-real-estate/contoso-real-estate)
