@@ -135,6 +135,12 @@ export CURRENT_USER_OBJECTID=$(az ad user show --id $CURRENT_USER --query object
 
 ## Functions
 
+### host.json
+
+* Timer trigger won't run if you are logging to Application Insights with too high a sampling rate
+* Timer trigger may stop working if functions run past default timeout (set the default timeout explicitly)
+* Review "Diagnose and solve problems" in portal to find issues
+
 ### Custom `route` in `function.json`
 
 ```json
