@@ -56,6 +56,14 @@ export CURRENT_USER=$(az account show --query user.name -o tsv)
 export CURRENT_USER_OBJECTID=$(az ad user show --id $CURRENT_USER --query objectId -o tst)
 ```
 
+### sorted results
+
+Example of sorting all subscriptions by name. Supporting [documentation](https://learn.microsoft.com/cli/azure/query-azure-cli?tabs=concepts%2Cbash#manipulating-output-with-functions) for `sort_by`.
+
+```
+az account list --query "sort_by([].{Name:name, SubscriptionId:id, TenantId:tenantId}, &Name)" --output table
+```
+
 ## Azure SDK
 
 * Iterators and paging through results
@@ -76,9 +84,12 @@ export CURRENT_USER_OBJECTID=$(az ad user show --id $CURRENT_USER --query object
   * WEBSITE_AUTH_TENANT_ID - this is either your tenant or "COMMON", might be another name depending on how the config is programmed in JS
 * Port
   * 8080 is default
-  * change via App Setting ->  WEBSITES_PORT
+ * change via App Setting ->  WEBSITES_PORT or use following
+      ```
+      process.env.PORT || 3000
+      ```
 * Install NPM packages after Zip deploy
-  * App Setting -> SCM_DO_BUILD_DURING_DEPLOYMENT -> true
+  * App Setting -> SCM_DO_BUILD_DURING_DEPLOYMENT -> true - this setting is created for you if you create app service from VSCode
 * Configure logging to container logs
   * Monitoring -> Logs -> Enable
   * Download lixux logs: https://YOUR-RESOURCE-NAME.scm.azurewebsites.net/api/logs/docker/zip
@@ -111,6 +122,20 @@ export CURRENT_USER_OBJECTID=$(az ad user show --id $CURRENT_USER --query object
 [Azure cloud shell](https://ms.portal.azure.com/#cloudshell/) allows you to use Azure CLI without having to install it. 
 
 * Has [jq](https://stedolan.github.io/jq/) (commandline JSON processor) installed
+
+## Azure SDK
+
+* Iterators and paging through results
+  * Brian's blob post: [Async Iterators in the Azure SDK for JavaScript/TypeScript](https://devblogs.microsoft.com/azure-sdk/async-iterators-in-the-azure-sdk-for-javascript-typescript/)
+  * In order to get continuation token for next page, you have to call .next()
+
+## Cognitive Services
+
+* [samples repo](https://github.com/Azure-Samples/cognitive-services-quickstart-code)
+
+### Content moderator
+
+* [Sample image](https://moderatorsampleimages.blob.core.windows.net/samples/sample2.jpg)
 
 ## Databases
 
@@ -171,6 +196,14 @@ async function main() {
 main().catch((error: any) => {
   console.error('Error running connection test:', error);
 });
+```
+
+### PostgreSQL
+
+#### Prisma URL
+
+```
+postgresql://USER@RESOURCENAME:PASSWORD@RESOURCENAME.postgres.database.azure.com:5432/DATABASENAME?&sslmode=require
 ```
 
 ## Database emulators
