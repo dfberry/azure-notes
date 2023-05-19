@@ -131,6 +131,48 @@ export CURRENT_USER_OBJECTID=$(az ad user show --id $CURRENT_USER --query object
 * Server-side JS - [Azure/azure-cosmosdb-js-server](https://github.com/Azure/azure-cosmosdb-js-server)
 * [Node sp sample](https://github.com/Azure/azure-cosmosdb-node/tree/master/samples/ServerSideScripts)
 
+#### Test Cosmos DB connection
+
+Reads are retried so a good test is a write (create)
+
+```typescript
+import { CosmosClient } from '@azure/cosmos';
+import { v4 as uuidv4 } from 'uuid';
+import * as dotenv from 'dotenv';
+dotenv.config();
+
+async function main() {
+  const name = process.env.AZURE_COSMOSDB_NAME as string;
+  const key = process.env.AZURE_COSMOSDB_KEY as string;
+  const client = new CosmosClient({
+    endpoint: `https://${name}.documents.azure.com`,
+    key,
+    connectionPolicy: {
+      requestTimeout: 1000,
+      retryOptions: {
+        maxRetryAttemptCount: 0,
+        fixedRetryIntervalInMilliseconds: 0,
+        maxWaitTimeInSeconds: 1000
+      }
+    }
+  });
+  const { database } = await client.databases.createIfNotExists({
+    id: 'test'
+  });
+  const { container } = await database.containers.createIfNotExists({
+    id: 'test'
+  });
+  const { resource: item } = await container.items.create({
+    id: uuidv4().toString(),
+    name: 'test'
+  });
+  console.log('Created item:', item);
+}
+main().catch((error: any) => {
+  console.error('Error running connection test:', error);
+});
+```
+
 ## Database emulators
 
 * [Cosmos DB from container for linux](https://docs.microsoft.com/en-us/azure/cosmos-db/linux-emulator?tabs=sql-api%2Cssl-netstd21#run-the-linux-emulator-on-macos)
