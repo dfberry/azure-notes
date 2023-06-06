@@ -441,6 +441,10 @@ main(accessToken).then((userData)=>{
 
 ```
 
+## PowerShell
+
+Run from VSCode integrated terminal to avoid having to run in admin-elevated-privileges terminal. 
+
 ## Visual Studio Code
 
 ## Docker containers for dev containers
