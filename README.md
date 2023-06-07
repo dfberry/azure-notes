@@ -452,7 +452,13 @@ main(accessToken).then((userData)=>{
 
 ## PowerShell
 
-Run from VSCode integrated terminal to avoid having to run in admin-elevated-privileges terminal. 
+* Run from VSCode integrated terminal to avoid having to run in admin-elevated-privileges terminal. 
+* Use `-Scope CurrentUser` so you don't have to use elevated priveledges
+
+    ```azurepowershell-interactive
+    Install-Module -Name Az.Search -Scope CurrentUser
+    ```
+
 
 ## Visual Studio Code
 
