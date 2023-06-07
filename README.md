@@ -76,6 +76,10 @@ az account list --query "sort_by([].{Name:name, SubscriptionId:id, TenantId:tena
 
 * Error:  "The directory object quota limit for the Principal has been exceeded. Please ask your administrator to increase the quota limit or delete objects to reduce the used quota." - [StackOverflow showing PowerShell command to fix](https://stackoverflow.com/questions/58935129/cant-create-new-service-principals-in-azure-despite-being-under-quota)
 
+### Passwordless connections
+
+* [Passwordless connections for Azure services](https://learn.microsoft.com/en-us/azure/developer/intro/passwordless-overview)
+
 ## Azure App Service
 
 * Easy auth settings
@@ -440,6 +444,11 @@ main(accessToken).then((userData)=>{
 })
 
 ```
+
+## Passwordless connections to Azure Services
+
+* [Passwordless connections for Azure services](https://learn.microsoft.com/en-us/azure/developer/intro/passwordless-overview)
+* Prefer user-assigned over system-assigned
 
 ## PowerShell
 
