@@ -527,5 +527,6 @@ In `./.vscode/launch.json` file:
 
 #### Error: Can't find task for func: host start
 
+* [StackOverflow of ideas to try](https://stackoverflow.com/questions/56881688/could-not-find-the-task-func-host-start)
 * Always run functions app in docker container because Functions runtime are directly tied to Node runtime
 * Make sure Azure Functions extensions in installed and _loaded_ in VS Code in the container. The extenion may be in ./vscode/extensions.json, but may not be loaded correctly
