@@ -64,6 +64,99 @@ Example of sorting all subscriptions by name. Supporting [documentation](https:/
 az account list --query "sort_by([].{Name:name, SubscriptionId:id, TenantId:tenantId}, &Name)" --output table
 ```
 
+## Azurite
+
+### Azurite + SDK
+
+Conceptual steps
+
+1.	Create a self-signed certificate and get it into your local certificate store
+1.	Start Azurite with that certificate. 
+1.	Start client app with ability for HTTP client inside SDK to ignore SSL/TLS rejections.
+1.	Client calls SDK
+1.	Success!
+
+#### Create and trust self-signed certificate
+
+1. Create self-signed certificate
+
+  ```bash
+  openssl req -newkey rsa:2048 -x509 -nodes -keyout key.pem -new -out cert.pem -sha256 -days 365 -addext 'subjectAltName=IP:127.0.0.1' -subj '/C=CO/ST=ST/L=LO/O=OR/OU=OU/CN=CN'"
+  ```
+  
+1. Trust certificate by adding it to local certificate store
+
+  ```bash
+  sudo update-ca-certificates 
+  ```
+  
+1. Verify certificate in store
+
+  ```bash
+  sudo openssl x509 -in /etc/ssl/certs/ca-certificates.crt -text -noout | grep "Subject:"
+  ```
+
+#### Start Azurite with that certificate
+
+```bash
+azurite --location azurite --debug azurite/debug.log --oauth basic --cert ./cert.pem --key ./key.pem
+```
+
+SDK needs `--oauth basic`.
+
+#### Start client app to ignore SSL/TLS rejections
+
+For Node.js Azure SDKS, set the following environment variable:
+
+```ini
+NODE_TLS_REJECT_UNAUTHORIZED=false
+NODE_TLS_REJECT_UNAUTHORIZED='0'
+```
+
+For Azure Storage SDK:
+
+```typescript
+import {
+  BlobServiceClient
+} from "@azure/storage-blob";
+
+export const createContainer = async (
+  connectionString: string,
+  containerName: string)=> {
+  // get storage client
+  const blobServiceClient = BlobServiceClient.fromConnectionString(
+    connectionString
+  );
+
+  // get container client
+  const containerClient = blobServiceClient.getContainerClient(
+    containerName
+  );
+  const createContainerResult = containerClient.createIfNotExists();
+  return createContainerResult;
+}
+
+async function main(){
+
+    const container = `test-${Date.now()}`;
+    console.log(container);
+
+    process.env["NODE_TLS_REJECT_UNAUTHORIZED"]='0';
+    const connectionString = process.env["STORAGE_CONNECTIONSTRING"] as string;
+    const sasInfo = await createContainer(
+        connectionString,
+        container);
+    
+    console.log(sasInfo.errorCode)
+
+    return sasInfo.errorCode;
+}
+
+main().then((results)=>{
+    console.log(JSON.stringify(results))
+}).catch(err=>console.log(err))
+```
+
 ## Azure SDK
 
 * Iterators and paging through results
