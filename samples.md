@@ -29,3 +29,5 @@
 ## E2E
 
 * [Cloud Advocacy - Contoso Real Estate](https://github.com/contoso-real-estate/contoso-real-estate)
+* [30 days of destructuring ...](https://github.com/30DaysOf/deconstructing-contoso-real-estate)
+* [30 days of restructuring ...](https://github.com/30DaysOf/reconstructing-contoso-real-estate)
