@@ -31,3 +31,10 @@
 * [Cloud Advocacy - Contoso Real Estate](https://github.com/contoso-real-estate/contoso-real-estate)
 * [30 days of destructuring ...](https://github.com/30DaysOf/deconstructing-contoso-real-estate)
 * [30 days of restructuring ...](https://github.com/30DaysOf/reconstructing-contoso-real-estate)
+
+## Open AI
+
+* [Search - Python](https://github.com/Azure-Samples/azure-search-openai-demo)
+* [Search- JavaScript](https://github.com/Azure-Samples/azure-search-openai-javascript)
+* [Search - .NET](https://github.com/Azure-Samples/azure-search-openai-demo-csharp)
+* [Search - Java](https://github.com/Azure-Samples/azure-search-openai-demo-java)
