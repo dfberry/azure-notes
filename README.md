@@ -177,7 +177,11 @@ main().then((results)=>{
 
 ### Roles
 
-Find role
+#### Find role id by role
+
+While you can use the az command `az role definition list`, it might be easier to create the Azure service then look at the possiblities in the IAM section for roles.
+
+#### Find role by role id
 
 ```bash
 az role definition list
