@@ -165,6 +165,8 @@ main().then((results)=>{
 
 ## Active Directory
 
+* 2023 - renamed to Entra ID
+
 ### App registrations
 
 * Error:  "The directory object quota limit for the Principal has been exceeded. Please ask your administrator to increase the quota limit or delete objects to reduce the used quota." - [StackOverflow showing PowerShell command to fix](https://stackoverflow.com/questions/58935129/cant-create-new-service-principals-in-azure-despite-being-under-quota)
@@ -172,6 +174,54 @@ main().then((results)=>{
 ### Passwordless connections
 
 * [Passwordless connections for Azure services](https://learn.microsoft.com/en-us/azure/developer/intro/passwordless-overview)
+
+### Roles
+
+Find role
+
+```bash
+az role definition list
+```
+
+Output looks like: 
+
+```console
+[
+{
+    "assignableScopes": [
+      "/"
+    ],
+    "createdBy": null,
+    "createdOn": "2023-12-15T06:02:00.574768+00:00",
+    "description": "Read, write, and delete KubernetesRuntime storage classes in an Arc connected Kubernetes cluster",
+    "id": "/subscriptions/52942f45-54fd-4fd9-b730-03d518fedf35/providers/Microsoft.Authorization/roleDefinitions/0cd9749a-3aaf-4ae5-8803-bd217705bf3b",
+    "name": "0cd9749a-3aaf-4ae5-8803-bd217705bf3b",
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.KubernetesRuntime/storageClasses/read",
+          "Microsoft.KubernetesRuntime/storageClasses/write",
+          "Microsoft.KubernetesRuntime/storageClasses/delete",
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read"
+        ],
+        "condition": null,
+        "conditionVersion": null,
+        "dataActions": [],
+        "notActions": [],
+        "notDataActions": []
+      }
+    ],
+    "roleName": "KubernetesRuntime Storage Class Contributor Role",
+    "roleType": "BuiltInRole",
+    "type": "Microsoft.Authorization/roleDefinitions",
+    "updatedBy": null,
+    "updatedOn": "2023-12-15T06:02:00.574768+00:00"
+  }
+]
+```
 
 ## Azure App Service
 
