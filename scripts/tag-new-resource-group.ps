@@ -1,0 +1,29 @@
+# Check if subscription ID is provided
+param (
+    [Parameter(Mandatory=$true)]
+    [string]$subscriptionId
+)
+
+# Set the subscription for the session
+Set-AzContext -Subscription $subscriptionId
+
+# Get the current date and time
+$currentDate = Get-Date -Format "yyyy-MM-ddTHH:mm:ssZ"
+
+# Get the date and time 24 hours ago
+$oneDayAgo = (Get-Date).AddDays(-1).ToString("yyyy-MM-ddTHH:mm:ssZ")
+
+# Get the list of resource groups
+$resourceGroups = Get-AzResourceGroup | Where-Object { $_.Tags.createdTime -ge $oneDayAgo -and $_.Tags.createdTime -le $currentDate }
+
+# Loop through the resource groups
+foreach ($resourceGroup in $resourceGroups) {
+    # Get the resource group name
+    $resourceGroupName = $resourceGroup.ResourceGroupName
+
+    # Get the creator's identity
+    $creatorIdentity = $resourceGroup.Tags.createdBy
+
+    # Add the tag with the creator's identity
+    Set-AzResourceGroup -Name $resourceGroupName -Tag @{ Creator = $creatorIdentity }
+}
