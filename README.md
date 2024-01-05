@@ -163,6 +163,26 @@ main().then((results)=>{
   * Brian's blob post: [Async Iterators in the Azure SDK for JavaScript/TypeScript](https://devblogs.microsoft.com/azure-sdk/async-iterators-in-the-azure-sdk-for-javascript-typescript/)
   * In order to get continuation token for next page, you have to call .next()
 
+## Azure Container Apps
+
+### Stop container app
+
+* [Issue](https://github.com/microsoft/azure-container-apps/issues/901#issuecomment-1714706153)
+
+```bash
+ID=$(az containerapp show -n {} -g {} -o tsv --query id)
+
+# Stop
+az rest \
+  --method post \
+  --url "${ID}/stop?api-version=2023-05-01"
+
+# Start
+az rest \
+  --method post \
+  --url "${ID}/start?api-version=2023-05-01"
+```
+
 ## Active Directory
 
 * 2023 - renamed to Entra ID
