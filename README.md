@@ -617,6 +617,11 @@ main(accessToken).then((userData)=>{
 * [Passwordless connections for Azure services](https://learn.microsoft.com/en-us/azure/developer/intro/passwordless-overview)
 * Prefer user-assigned over system-assigned
 
+## Playwright
+
+* Run as root, browsers are installed per user
+* Playwright uses the native/container IP/network so use the internal container's port for api and web when testing with Playwright - verified on local dev container, haven't verified with Codespaces
+
 ## PowerShell
 
 * Run from VSCode integrated terminal to avoid having to run in admin-elevated-privileges terminal. 
