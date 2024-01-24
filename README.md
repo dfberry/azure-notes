@@ -64,6 +64,12 @@ Example of sorting all subscriptions by name. Supporting [documentation](https:/
 az account list --query "sort_by([].{Name:name, SubscriptionId:id, TenantId:tenantId}, &Name)" --output table
 ```
 
+## Azure OpenAI
+
+### Rag chat overrides
+
+<img width="821" alt="image" src="https://github.com/dfberry/azure-notes/assets/1517008/2e822d4d-c71d-4287-89ce-aeb166784cdc">
+
 ## Azurite
 
 ### Azurite + SDK
