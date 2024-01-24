@@ -638,6 +638,14 @@ main(accessToken).then((userData)=>{
     ```
 
 
+## Static web app CLI
+
+### Start proxy for running front and backend
+
+```
+swa start http://localhost:4200 --api-devserver-url http://localhost:7071
+```
+
 ## Visual Studio Code
 
 ## Docker containers for dev containers
