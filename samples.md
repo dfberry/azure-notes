@@ -1,5 +1,17 @@
 # Samples
 
+## AI, OpenAI end-to-end
+
+* [Chat protocol](https://github.com/Azure-Samples/ai-chat-app-protocol)
+* [Chat over your data - Python](https://github.com/Azure-Samples/azure-search-openai-demo)
+* [Chat over your data - JavaScript](https://github.com/Azure-Samples/azure-search-openai-javascript)
+* [Chat over your data (RAG) evaluator](https://github.com/Azure-Samples/ai-rag-chat-evaluator)
+
+### Rate limit busting with load balancer
+
+* [Azure Container Apps](https://github.com/Azure-Samples/openai-aca-lb)
+* [APIM - enterprise](https://github.com/Azure-Samples/openai-apim-lb/)
+
 ## Azure CLI
 
 * [Bash scripts samples repo](https://github.com/Azure-Samples/azure-cli-samples)
