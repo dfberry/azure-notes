@@ -3,9 +3,13 @@
 ## AI, OpenAI end-to-end
 
 * [Chat protocol](https://github.com/Azure-Samples/ai-chat-app-protocol)
-* [Chat over your data - Python](https://github.com/Azure-Samples/azure-search-openai-demo)
-* [Chat over your data - JavaScript](https://github.com/Azure-Samples/azure-search-openai-javascript)
 * [Chat over your data (RAG) evaluator](https://github.com/Azure-Samples/ai-rag-chat-evaluator)
+* Chat over your data
+* [Python](https://github.com/Azure-Samples/azure-search-openai-demo)
+* [JavaScript](https://github.com/Azure-Samples/azure-search-openai-javascript)
+* [.NET](https://github.com/Azure-Samples/azure-search-openai-demo-csharp)
+* [Java](https://github.com/Azure-Samples/azure-search-openai-demo-java)
+
 
 ### Rate limit busting with load balancer
 
@@ -44,9 +48,5 @@
 * [30 days of destructuring ...](https://github.com/30DaysOf/deconstructing-contoso-real-estate)
 * [30 days of restructuring ...](https://github.com/30DaysOf/reconstructing-contoso-real-estate)
 
-## Open AI
 
-* [Search - Python](https://github.com/Azure-Samples/azure-search-openai-demo)
-* [Search- JavaScript](https://github.com/Azure-Samples/azure-search-openai-javascript)
-* [Search - .NET](https://github.com/Azure-Samples/azure-search-openai-demo-csharp)
-* [Search - Java](https://github.com/Azure-Samples/azure-search-openai-demo-java)
+
