@@ -425,6 +425,10 @@ postgresql://USER@RESOURCENAME:PASSWORD@RESOURCENAME.postgres.database.azure.com
 
 * Create SAS token in portal then compare to SAS token created with generateBlobSASQueryParameters
 
+## Deployment logs
+
+Deployment logs are available from the subscription under **Settings => Deployments**. Find the deployment and select **Delete**.
+
 ## Functions
 
 ### host.json
