@@ -300,6 +300,13 @@ Output looks like:
 
 * Has [jq](https://stedolan.github.io/jq/) (commandline JSON processor) installed
 
+## Azure Functions
+
+To enable remote build on Linux, you must set these application settings:
+
+* ENABLE_ORYX_BUILD=true
+* SCM_DO_BUILD_DURING_DEPLOYMENT=true
+
 ## Azure SDK
 
 * Iterators and paging through results
