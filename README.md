@@ -307,6 +307,8 @@ To enable remote build on Linux, you must set these application settings:
 * ENABLE_ORYX_BUILD=true
 * SCM_DO_BUILD_DURING_DEPLOYMENT=true
 
+Make sure to checkin package-lock.json
+
 ## Azure SDK
 
 * Iterators and paging through results
