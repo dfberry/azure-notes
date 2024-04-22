@@ -317,6 +317,7 @@ Make sure to checkin package-lock.json for deploy to Azure
 
 ### Sample code 
 
+* [Azure/azure-functions-nodejs-samples](https://github.com/Azure/azure-functions-nodejs-samples)
 * [Azure-Samples/functions-docs-javascript](https://github.com/Azure-Samples/functions-docs-javascript)
 * [ejizba/azure-functions-nodejs-stream](https://github.com/ejizba/azure-functions-nodejs-stream)
 * [ejizba/azure-functions-nodejs-samples](https://github.com/ejizba/azure-functions-nodejs-samples)
