@@ -302,12 +302,28 @@ Output looks like:
 
 ## Azure Functions
 
+### Monorepos
+
+Monorepos aren't supported in some of the Visual Studio Code and GitHub tooling, especially if managed Functions + SWA. Be careful how you set it up.
+
+### CICD
+
 To enable remote build on Linux, you must set these application settings:
 
 * ENABLE_ORYX_BUILD=true
 * SCM_DO_BUILD_DURING_DEPLOYMENT=true
 
-Make sure to checkin package-lock.json
+Make sure to checkin package-lock.json for deploy to Azure
+
+### Sample code 
+
+* [Azure-Samples/functions-docs-javascript](https://github.com/Azure-Samples/functions-docs-javascript)
+* [ejizba/azure-functions-nodejs-stream](https://github.com/ejizba/azure-functions-nodejs-stream)
+* [ejizba/azure-functions-nodejs-samples](https://github.com/ejizba/azure-functions-nodejs-samples)
+* [ejizba/azure-functions-ts-binding-samples](https://github.com/ejizba/azure-functions-ts-binding-samples)
+* [ejizba/azure-functions-js-binding-samples](https://github.com/ejizba/azure-functions-js-binding-samples)
+* [ejizba/allTheTriggersV3](https://github.com/ejizba/allTheTriggersV3)
+
 
 ## Azure SDK
 
