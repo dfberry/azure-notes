@@ -315,6 +315,11 @@ To enable remote build on Linux, you must set these application settings:
 
 Make sure to checkin package-lock.json for deploy to Azure
 
+### AI 
+
+* [OpenAI binding Source repo](https://github.com/Azure/azure-functions-openai-extension)
+* [LangChainjs](https://github.com/Azure-Samples/serverless-chat-langchainjs)
+
 ### Sample code 
 
 * [Azure/azure-functions-nodejs-samples](https://github.com/Azure/azure-functions-nodejs-samples)
@@ -324,6 +329,8 @@ Make sure to checkin package-lock.json for deploy to Azure
 * [ejizba/azure-functions-ts-binding-samples](https://github.com/ejizba/azure-functions-ts-binding-samples)
 * [ejizba/azure-functions-js-binding-samples](https://github.com/ejizba/azure-functions-js-binding-samples)
 * [ejizba/allTheTriggersV3](https://github.com/ejizba/allTheTriggersV3)
+
+
 
 
 ## Azure SDK
