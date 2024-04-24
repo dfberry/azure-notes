@@ -11,6 +11,7 @@
 ## Azure
 
 * [Azure resource explorer](https://resources.azure.com/)
+* [Bicep Quickstart samples](https://github.com/Azure/azure-quickstart-templates)
  
 * Easy auth:  
    * In resource explorer, location for easy auth is `/providers/Microsoft.Web/sites/APP-SERVICE-NAME/config/authsettingsV2/list?api-version=2020-12-01`
