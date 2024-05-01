@@ -78,6 +78,7 @@ Make sure to look at the Functions samples too.
 * [Fastify](https://github.com/Azure-Samples/azure-openai-rag-workshop/blob/base/src/backend-node-qdrant/src/plugins/chat.ts)
 * [AI Studio CoPilot sample](https://github.com/Azure/aistudio-copilot-sample)
 * [Contoso Chat](https://github.com/Azure-Samples/contoso-chat): This sample has the full End2End process of creating RAG application with Prompt Flow and AI Studio. It includes GPT 3.5 Turbo LLM application code, evaluations, deployment automation with AZD CLI, GitHub actions for evaluation and deployment and intent mapping for multiple LLM task mapping.
+* [AI-in-a-Box](https://github.com/Azure/AI-in-a-Box)
   
 ## Azurite
 
