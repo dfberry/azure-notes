@@ -1,5 +1,11 @@
 # azure-notes
 
+## assign reviewer
+
+```
+#assign-reviewer: bob, Alex, mitchell, Karl
+```
+
 ## Web properties
 
 * [JavaScript at Microsoft](https://developer.microsoft.com/en-us/javascript/)
