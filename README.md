@@ -73,6 +73,8 @@ az account list --query "sort_by([].{Name:name, SubscriptionId:id, TenantId:tena
 
 ## Azure OpenAI
 
+* `apiVersion`: this refers to the REST version, not the deployment's model version.
+
 ### Rag chat overrides
 
 <img width="821" alt="image" src="https://github.com/dfberry/azure-notes/assets/1517008/2e822d4d-c71d-4287-89ce-aeb166784cdc">
