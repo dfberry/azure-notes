@@ -1,3 +1,5 @@
+// resource history
+
 const {
   ClientSecretCredential,
   DefaultAzureCredential,

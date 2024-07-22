@@ -1,3 +1,4 @@
+// main.bicep
 targetScope = 'subscription'
 
 // The main bicep module to provision Azure resources.

@@ -1,3 +1,4 @@
+//
 param location string = resourceGroup().location
 
 @description('The name of the identity')

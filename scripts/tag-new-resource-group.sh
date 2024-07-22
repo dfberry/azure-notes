@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# tag new
 # Check if subscription ID is provided
 if [ -z "$1" ]
 then
