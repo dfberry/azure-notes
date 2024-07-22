@@ -55,6 +55,12 @@
        
 ## Azure CLI
 
+### Current regions with programmatic names
+
+```
+az account list-locations -o table
+```
+
 ### Current logged-in user
 
 ```
