@@ -52,7 +52,11 @@
           }
         }}        
         ```      
-       
+
+### Azure endpoints
+
+REST-based endpoints are available on the Overview page of each resource. When using with environment variables, use the entire URL instead of a string manipulation with the resource name because federal clouds have different domains or subdomains where a single resource name substitution is not enough. 
+  
 ## Azure CLI
 
 ### Current regions with programmatic names
