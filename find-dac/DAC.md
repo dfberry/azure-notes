@@ -1,131 +1,131 @@
-| File | Dependency found |
-| --- | --- |
-| ai/ai-inference-rest/package.json | true |
-| anomalydetector/ai-anomaly-detector-rest/package.json | true |
-| appconfiguration/app-configuration/package.json | true |
-| batch/batch-rest/package.json | true |
-| cognitivelanguage/ai-language-conversations/package.json | true |
-| cognitivelanguage/ai-language-text/package.json | true |
-| cognitivelanguage/ai-language-textauthoring/package.json | true |
-| communication/communication-alpha-ids/package.json | true |
-| communication/communication-call-automation/package.json | true |
-| communication/communication-chat/package.json | true |
-| communication/communication-common/package.json | true |
-| communication/communication-email/package.json | true |
-| communication/communication-identity/package.json | true |
-| communication/communication-job-router/package.json | true |
-| communication/communication-job-router-rest/package.json | true |
-| communication/communication-messages-rest/package.json | true |
-| communication/communication-phone-numbers/package.json | true |
-| communication/communication-recipient-verification/package.json | true |
-| communication/communication-rooms/package.json | true |
-| communication/communication-short-codes/package.json | true |
-| communication/communication-sms/package.json | true |
-| communication/communication-tiering/package.json | true |
-| communication/communication-toll-free-verification/package.json | true |
-| confidentialledger/confidential-ledger-rest/package.json | true |
-| containerregistry/container-registry/package.json | true |
-| contentsafety/ai-content-safety-rest/package.json | true |
-| core/core-amqp/package.json | true |
-| core/core-client/package.json | true |
-| core/core-client-rest/package.json | true |
-| core/core-rest-pipeline/package.json | true |
-| cosmosdb/cosmos/package.json | true |
-| devcenter/developer-devcenter-rest/package.json | true |
-| deviceupdate/iot-device-update-rest/package.json | true |
-| digitaltwins/digital-twins-core/package.json | true |
-| documentintelligence/ai-document-intelligence-rest/package.json | true |
-| documenttranslator/ai-document-translator-rest/package.json | true |
-| easm/defender-easm-rest/package.json | true |
-| entra/functions-authentication-events/package.json | true |
-| eventgrid/eventgrid/package.json | true |
-| eventgrid/eventgrid-namespaces/package.json | true |
-| eventgrid/eventgrid-system-events/package.json | true |
-| eventhub/event-hubs/package.json | true |
-| face/ai-vision-face-rest/package.json | true |
-| formrecognizer/ai-form-recognizer/package.json | true |
-| healthdataaiservices/azure-health-deidentification/package.json | true |
-| healthinsights/health-insights-cancerprofiling-rest/package.json | true |
-| healthinsights/health-insights-clinicalmatching-rest/package.json | true |
-| healthinsights/health-insights-radiologyinsights-rest/package.json | true |
-| identity/identity/package.json | true |
-| identity/identity-broker/package.json | true |
-| identity/identity-cache-persistence/package.json | true |
-| keyvault/keyvault-admin/package.json | true |
-| keyvault/keyvault-certificates/package.json | true |
-| keyvault/keyvault-common/package.json | true |
-| keyvault/keyvault-keys/package.json | true |
-| keyvault/keyvault-secrets/package.json | true |
-| maps/maps-common/package.json | true |
-| maps/maps-geolocation-rest/package.json | true |
-| maps/maps-render-rest/package.json | true |
-| maps/maps-route-rest/package.json | true |
-| maps/maps-search-rest/package.json | true |
-| metricsadvisor/ai-metrics-advisor/package.json | true |
-| mixedreality/mixed-reality-authentication/package.json | true |
-| monitor/monitor-ingestion/package.json | true |
-| monitor/monitor-opentelemetry/package.json | true |
-| monitor/monitor-opentelemetry-exporter/package.json | true |
-| monitor/monitor-query/package.json | true |
-| notificationhubs/notification-hubs/package.json | true |
-| purview/purview-administration-rest/package.json | true |
-| purview/purview-catalog-rest/package.json | true |
-| purview/purview-datamap-rest/package.json | true |
-| purview/purview-scanning-rest/package.json | true |
-| purview/purview-sharing-rest/package.json | true |
-| purview/purview-workflow-rest/package.json | true |
-| quantum/quantum-jobs/package.json | true |
-| remoterendering/mixed-reality-remote-rendering/package.json | true |
-| schemaregistry/schema-registry/package.json | true |
-| search/search-documents/package.json | true |
-| servicebus/service-bus/package.json | true |
-| storage/storage-blob/package.json | true |
-| storage/storage-blob-changefeed/package.json | true |
-| storage/storage-file-datalake/package.json | true |
-| storage/storage-file-share/package.json | true |
-| storage/storage-queue/package.json | true |
-| synapse/synapse-access-control/package.json | true |
-| synapse/synapse-access-control-rest/package.json | true |
-| synapse/synapse-artifacts/package.json | true |
-| synapse/synapse-managed-private-endpoints/package.json | true |
-| synapse/synapse-monitoring/package.json | true |
-| synapse/synapse-spark/package.json | true |
-| tables/data-tables/package.json | true |
-| template/template/package.json | true |
-| template/template-dpg/package.json | true |
-| textanalytics/ai-text-analytics/package.json | true |
-| translation/ai-translation-document-rest/package.json | true |
-| translation/ai-translation-text-rest/package.json | true |
-| vision/ai-vision-image-analysis-rest/package.json | true |
-| web-pubsub/web-pubsub/package.json | true |
-| apimanagement/api-management-custom-widgets-scaffolder/package.json | false |
-| apimanagement/api-management-custom-widgets-tools/package.json | false |
-| appconfiguration/app-configuration/sample-react/package.json | false |
-| batch/batch/package.json | false |
-| core/abort-controller/package.json | false |
-| core/core-auth/package.json | false |
-| core/core-http-compat/package.json | false |
-| core/core-lro/package.json | false |
-| core/core-paging/package.json | false |
-| core/core-sse/package.json | false |
-| core/core-tracing/package.json | false |
-| core/core-util/package.json | false |
-| core/core-xml/package.json | false |
-| core/logger/package.json | false |
-| core/ts-http-runtime/package.json | false |
-| cosmosdb/cosmos/MultiRegionWriteSample/package.json | false |
-| eventhub/eventhubs-checkpointstore-blob/package.json | false |
-| eventhub/eventhubs-checkpointstore-table/package.json | false |
-| eventhub/mock-hub/package.json | false |
-| identity/identity/integration/AzureKubernetes/package.json | false |
-| identity/identity/integration/AzureWebApps/package.json | false |
-| identity/identity-vscode/package.json | false |
-| instrumentation/opentelemetry-instrumentation-azure-sdk/package.json | false |
-| iot/iot-modelsrepository/package.json | false |
-| openai/openai/package.json | false |
-| schemaregistry/schema-registry-avro/package.json | false |
-| schemaregistry/schema-registry-json/package.json | false |
-| storage/storage-internal-avro/package.json | false |
-| web-pubsub/web-pubsub-client/package.json | false |
-| web-pubsub/web-pubsub-client-protobuf/package.json | false |
-| web-pubsub/web-pubsub-express/package.json | false |
+| File | Dependency found | README Status |
+| --- | --- | --- |
+| ai/ai-inference-rest/package.json | true | DefaultAzureCredential |
+| anomalydetector/ai-anomaly-detector-rest/package.json | true | DefaultAzureCredential |
+| appconfiguration/app-configuration/package.json | true | DefaultAzureCredential |
+| batch/batch-rest/package.json | true | DefaultAzureCredential |
+| cognitivelanguage/ai-language-conversations/package.json | true | None |
+| cognitivelanguage/ai-language-text/package.json | true | DefaultAzureCredential |
+| cognitivelanguage/ai-language-textauthoring/package.json | true | DefaultAzureCredential |
+| communication/communication-alpha-ids/package.json | true | DefaultAzureCredential |
+| communication/communication-call-automation/package.json | true | DefaultAzureCredential |
+| communication/communication-chat/package.json | true | TokenCredential |
+| communication/communication-common/package.json | true | TokenCredential |
+| communication/communication-email/package.json | true | DefaultAzureCredential |
+| communication/communication-identity/package.json | true | Both |
+| communication/communication-job-router/package.json | true | None |
+| communication/communication-job-router-rest/package.json | true | DefaultAzureCredential |
+| communication/communication-messages-rest/package.json | true | DefaultAzureCredential |
+| communication/communication-phone-numbers/package.json | true | DefaultAzureCredential |
+| communication/communication-recipient-verification/package.json | true | DefaultAzureCredential |
+| communication/communication-rooms/package.json | true | Both |
+| communication/communication-short-codes/package.json | true | DefaultAzureCredential |
+| communication/communication-sms/package.json | true | DefaultAzureCredential |
+| communication/communication-tiering/package.json | true | DefaultAzureCredential |
+| communication/communication-toll-free-verification/package.json | true | DefaultAzureCredential |
+| confidentialledger/confidential-ledger-rest/package.json | true | DefaultAzureCredential |
+| containerregistry/container-registry/package.json | true | DefaultAzureCredential |
+| contentsafety/ai-content-safety-rest/package.json | true | DefaultAzureCredential |
+| core/core-amqp/package.json | true | None |
+| core/core-client/package.json | true | None |
+| core/core-client-rest/package.json | true | None |
+| core/core-rest-pipeline/package.json | true | None |
+| cosmosdb/cosmos/package.json | true | None |
+| devcenter/developer-devcenter-rest/package.json | true | DefaultAzureCredential |
+| deviceupdate/iot-device-update-rest/package.json | true | DefaultAzureCredential |
+| digitaltwins/digital-twins-core/package.json | true | DefaultAzureCredential |
+| documentintelligence/ai-document-intelligence-rest/package.json | true | DefaultAzureCredential |
+| documenttranslator/ai-document-translator-rest/package.json | true | DefaultAzureCredential |
+| easm/defender-easm-rest/package.json | true | DefaultAzureCredential |
+| entra/functions-authentication-events/package.json | true | None |
+| eventgrid/eventgrid/package.json | true | Both |
+| eventgrid/eventgrid-namespaces/package.json | true | Both |
+| eventgrid/eventgrid-system-events/package.json | true | None |
+| eventhub/event-hubs/package.json | true | Both |
+| face/ai-vision-face-rest/package.json | true | DefaultAzureCredential |
+| formrecognizer/ai-form-recognizer/package.json | true | Both |
+| healthdataaiservices/azure-health-deidentification/package.json | true | DefaultAzureCredential |
+| healthinsights/health-insights-cancerprofiling-rest/package.json | true | DefaultAzureCredential |
+| healthinsights/health-insights-clinicalmatching-rest/package.json | true | DefaultAzureCredential |
+| healthinsights/health-insights-radiologyinsights-rest/package.json | true | DefaultAzureCredential |
+| identity/identity/package.json | true | Both |
+| identity/identity-broker/package.json | true | None |
+| identity/identity-cache-persistence/package.json | true | None |
+| keyvault/keyvault-admin/package.json | true | DefaultAzureCredential |
+| keyvault/keyvault-certificates/package.json | true | DefaultAzureCredential |
+| keyvault/keyvault-common/package.json | true | None |
+| keyvault/keyvault-keys/package.json | true | DefaultAzureCredential |
+| keyvault/keyvault-secrets/package.json | true | DefaultAzureCredential |
+| maps/maps-common/package.json | true | None |
+| maps/maps-geolocation-rest/package.json | true | DefaultAzureCredential |
+| maps/maps-render-rest/package.json | true | DefaultAzureCredential |
+| maps/maps-route-rest/package.json | true | DefaultAzureCredential |
+| maps/maps-search-rest/package.json | true | DefaultAzureCredential |
+| metricsadvisor/ai-metrics-advisor/package.json | true | DefaultAzureCredential |
+| mixedreality/mixed-reality-authentication/package.json | true | DefaultAzureCredential |
+| monitor/monitor-ingestion/package.json | true | Both |
+| monitor/monitor-opentelemetry/package.json | true | None |
+| monitor/monitor-opentelemetry-exporter/package.json | true | None |
+| monitor/monitor-query/package.json | true | Both |
+| notificationhubs/notification-hubs/package.json | true | None |
+| purview/purview-administration-rest/package.json | true | DefaultAzureCredential |
+| purview/purview-catalog-rest/package.json | true | DefaultAzureCredential |
+| purview/purview-datamap-rest/package.json | true | DefaultAzureCredential |
+| purview/purview-scanning-rest/package.json | true | DefaultAzureCredential |
+| purview/purview-sharing-rest/package.json | true | DefaultAzureCredential |
+| purview/purview-workflow-rest/package.json | true | None |
+| quantum/quantum-jobs/package.json | true | Both |
+| remoterendering/mixed-reality-remote-rendering/package.json | true | DefaultAzureCredential |
+| schemaregistry/schema-registry/package.json | true | DefaultAzureCredential |
+| search/search-documents/package.json | true | None |
+| servicebus/service-bus/package.json | true | Both |
+| storage/storage-blob/package.json | true | DefaultAzureCredential |
+| storage/storage-blob-changefeed/package.json | true | None |
+| storage/storage-file-datalake/package.json | true | DefaultAzureCredential |
+| storage/storage-file-share/package.json | true | None |
+| storage/storage-queue/package.json | true | DefaultAzureCredential |
+| synapse/synapse-access-control/package.json | true | DefaultAzureCredential |
+| synapse/synapse-access-control-rest/package.json | true | DefaultAzureCredential |
+| synapse/synapse-artifacts/package.json | true | DefaultAzureCredential |
+| synapse/synapse-managed-private-endpoints/package.json | true | DefaultAzureCredential |
+| synapse/synapse-monitoring/package.json | true | DefaultAzureCredential |
+| synapse/synapse-spark/package.json | true | DefaultAzureCredential |
+| tables/data-tables/package.json | true | Both |
+| template/template/package.json | true | None |
+| template/template-dpg/package.json | true | None |
+| textanalytics/ai-text-analytics/package.json | true | DefaultAzureCredential |
+| translation/ai-translation-document-rest/package.json | true | None |
+| translation/ai-translation-text-rest/package.json | true | TokenCredential |
+| vision/ai-vision-image-analysis-rest/package.json | true | DefaultAzureCredential |
+| web-pubsub/web-pubsub/package.json | true | DefaultAzureCredential |
+| apimanagement/api-management-custom-widgets-scaffolder/package.json | false | N/A |
+| apimanagement/api-management-custom-widgets-tools/package.json | false | N/A |
+| appconfiguration/app-configuration/sample-react/package.json | false | N/A |
+| batch/batch/package.json | false | N/A |
+| core/abort-controller/package.json | false | N/A |
+| core/core-auth/package.json | false | N/A |
+| core/core-http-compat/package.json | false | N/A |
+| core/core-lro/package.json | false | N/A |
+| core/core-paging/package.json | false | N/A |
+| core/core-sse/package.json | false | N/A |
+| core/core-tracing/package.json | false | N/A |
+| core/core-util/package.json | false | N/A |
+| core/core-xml/package.json | false | N/A |
+| core/logger/package.json | false | N/A |
+| core/ts-http-runtime/package.json | false | N/A |
+| cosmosdb/cosmos/MultiRegionWriteSample/package.json | false | N/A |
+| eventhub/eventhubs-checkpointstore-blob/package.json | false | N/A |
+| eventhub/eventhubs-checkpointstore-table/package.json | false | N/A |
+| eventhub/mock-hub/package.json | false | N/A |
+| identity/identity/integration/AzureKubernetes/package.json | false | N/A |
+| identity/identity/integration/AzureWebApps/package.json | false | N/A |
+| identity/identity-vscode/package.json | false | N/A |
+| instrumentation/opentelemetry-instrumentation-azure-sdk/package.json | false | N/A |
+| iot/iot-modelsrepository/package.json | false | N/A |
+| openai/openai/package.json | false | N/A |
+| schemaregistry/schema-registry-avro/package.json | false | N/A |
+| schemaregistry/schema-registry-json/package.json | false | N/A |
+| storage/storage-internal-avro/package.json | false | N/A |
+| web-pubsub/web-pubsub-client/package.json | false | N/A |
+| web-pubsub/web-pubsub-client-protobuf/package.json | false | N/A |
+| web-pubsub/web-pubsub-express/package.json | false | N/A |

@@ -23,12 +23,34 @@ async function checkDependency(filePath: string): Promise<boolean> {
     const json = JSON.parse(data);
     return json.dependencies && json.dependencies['@azure/core-auth'] !== undefined;
 }
-
+async function checkReadme(filePath: string): Promise<string> {
+    const readmePath = path.join(path.dirname(filePath), 'README.md');
+    try {
+        const data = await readFile(readmePath, 'utf8');
+        const hasTokenCredential = data.includes('TokenCredential');
+        const hasDefaultAzureCredential = data.includes('DefaultAzureCredential');
+        if (hasTokenCredential && hasDefaultAzureCredential) {
+            return 'Both';
+        } else if (hasTokenCredential) {
+            return 'TokenCredential';
+        } else if (hasDefaultAzureCredential) {
+            return 'DefaultAzureCredential';
+        } else {
+            return 'None';
+        }
+    } catch (error) {
+        return 'README.md not found';
+    }
+}
 async function findDependencyInPackages(dir: string): Promise<void> {
     const packageJsonFiles = await findPackageJsonFiles(dir);
     const results = await Promise.all(packageJsonFiles.map(async (file) => {
         const hasDependency = await checkDependency(file);
-        return { file, found: hasDependency };
+        let readmeStatus = 'N/A';
+        if (hasDependency) {
+            readmeStatus = await checkReadme(file);
+        }
+        return { file, found: hasDependency, readmeStatus };
     }));
 
     // Filter out paths that contain 'arm'
@@ -42,13 +64,13 @@ async function findDependencyInPackages(dir: string): Promise<void> {
     filteredResults.sort((a, b) => Number(b.found) - Number(a.found));
 
     // Create Markdown table
-    let markdownTable = '| File | Dependency found |\n| --- | --- |\n';
+    let markdownTable = '| File | Dependency found | README Status |\n| --- | --- | --- |\n';
     filteredResults.forEach(result => {
         // Remove the '../azure-sdk-for-js/sdk/' prefix
         const trimmedFile = result.file.replace('../azure-sdk-for-js/sdk/', '');
-        markdownTable += `| ${trimmedFile} | ${result.found} |\n`;
+        markdownTable += `| ${trimmedFile} | ${result.found} | ${result.readmeStatus} |\n`;
     });
-
+    
     // Write the Markdown table to DAC.md
     await fs.writeFile('DAC.md', markdownTable);
 }
