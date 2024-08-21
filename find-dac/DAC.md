@@ -117,7 +117,6 @@
 | eventhub/eventhubs-checkpointstore-blob/package.json | false |
 | eventhub/eventhubs-checkpointstore-table/package.json | false |
 | eventhub/mock-hub/package.json | false |
-| identity/identity/integration/AzureFunctions/RunTest/package.json | false |
 | identity/identity/integration/AzureKubernetes/package.json | false |
 | identity/identity/integration/AzureWebApps/package.json | false |
 | identity/identity-vscode/package.json | false |

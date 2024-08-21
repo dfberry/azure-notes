@@ -33,9 +33,9 @@ async function findDependencyInPackages(dir: string): Promise<void> {
 
     // Filter out paths that contain 'arm'
     const filteredResults = results.filter(result => 
-        !result.file.includes('arm') && 
-        !result.file.includes('samples') && 
-        !result.file.includes('test')
+        !result.file.toLowerCase().includes('arm') && 
+        !result.file.toLowerCase().includes('samples') && 
+        !result.file.toLowerCase().includes('test')
     );
 
     // Sort results to have true first and false after
