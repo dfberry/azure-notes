@@ -31,13 +31,26 @@ async function findDependencyInPackages(dir: string): Promise<void> {
         return { file, found: hasDependency };
     }));
 
-    // Sort results to have true first and false after
-    results.sort((a, b) => Number(b.found) - Number(a.found));
+    // Filter out paths that contain 'arm'
+    const filteredResults = results.filter(result => 
+        !result.file.includes('arm') && 
+        !result.file.includes('samples') && 
+        !result.file.includes('test')
+    );
 
-    // Print results with a space between true and false
-    results.forEach(result => {
-        console.log(`File: ${result.file}, Dependency found: ${result.found}`);
+    // Sort results to have true first and false after
+    filteredResults.sort((a, b) => Number(b.found) - Number(a.found));
+
+    // Create Markdown table
+    let markdownTable = '| File | Dependency found |\n| --- | --- |\n';
+    filteredResults.forEach(result => {
+        // Remove the '../azure-sdk-for-js/sdk/' prefix
+        const trimmedFile = result.file.replace('../azure-sdk-for-js/sdk/', '');
+        markdownTable += `| ${trimmedFile} | ${result.found} |\n`;
     });
+
+    // Write the Markdown table to DAC.md
+    await fs.writeFile('DAC.md', markdownTable);
 }
 
 // Example usage
