@@ -7,6 +7,8 @@
 * Chat over your data
 * [Python](https://github.com/Azure-Samples/azure-search-openai-demo)
 * [JavaScript](https://github.com/Azure-Samples/azure-search-openai-javascript)
+  * [Azure OpenAI keyless deployment](https://github.com/Azure-Samples/azure-openai-keyless-js)
+  * []()  
 * [.NET](https://github.com/Azure-Samples/azure-search-openai-demo-csharp)
 * [Java](https://github.com/Azure-Samples/azure-search-openai-demo-java)
 
