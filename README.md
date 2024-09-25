@@ -52,7 +52,22 @@
           }
         }}        
         ```      
-       
+
+### Access token
+
+Obtain an access token from MSI and then use it as a bearer token:
+
+```shell
+az account get-access-token --resource 499b84ac-1321-427f-aa17-267ca6975798 --query accessToken --output tsv
+
+ab1234512345... <-- your token
+```
+
+
+### Azure endpoints
+
+REST-based endpoints are available on the Overview page of each resource. When using with environment variables, use the entire URL instead of a string manipulation with the resource name because federal clouds have different domains or subdomains where a single resource name substitution is not enough. 
+  
 ## Azure CLI
 
 ### Current regions with programmatic names
