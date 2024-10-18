@@ -92,6 +92,12 @@ Example of sorting all subscriptions by name. Supporting [documentation](https:/
 az account list --query "sort_by([].{Name:name, SubscriptionId:id, TenantId:tenantId}, &Name)" --output table
 ```
 
+## Azure Developer CLI
+
+```
+azd auth login --tenant-id <YOUR_TENANT_ID>
+```
+
 ## Azure OpenAI
 
 * `apiVersion`: this refers to the REST version, not the deployment's model version.
